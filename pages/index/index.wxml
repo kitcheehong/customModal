@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class='index-container'>
+
+  <!-- 调用modal组件 -->
+  <roundModal hidden-modal="{{hiddenModal}}" modal-title="{{modalTitle}}" modal-content="{{modalContent}}" left-text="{{leftText}}" right-text="{{rightText}}" bind:cancelEvent="_clickLeftBtn" bind:confirmEvent="_clickRightBtn" bind:maskEvent="_modal_mask_click">
+    <!-- 自定义dialog内容view，默认是不显示出来的，只显示一般样式-->
+  </roundModal>
+
+  <!-- 调用自定义Toast组件 ,需要更多的属性自己添加吧-->
+  <customToast hide-toast="{{hideToast}}" toast-content="{{toastContent}}" show-time="{{showTime}}" background-color="{{backgroundColor}}" opacity="{{opacity}}"></customToast>
+
+  <!-- 调用自定义listModal组件 -->
+  <listModal hidelist-modal="{{hidelistModal}}" list-title="{{listTitle}}" bankcardlist ="{{bankcardlist}}" list-text="{{listText}}" bind:itemClickEvent="_itemClick" bind:bottemEvent="_clickBottomText"></listModal>
+
+    <inputModal hide-input-modal="{{hideInputModal}}"></inputModal>  
+   <!-- <loginPswModal hide-input-modal="{{hideInputModal}}"></loginPswModal>  -->
+
+  <button type='primary' bindtap='showMyToast' class='btn-style'>弹出自定义Toast</button>
+  <button type='warn' bindtap='showRoundModal' class='btn-style'>弹出圆角Modal</button>
+  <button type='primary' bindtap='showListModal' class='btn-style'>弹出listModal</button>
+  <button type='warn' bindtap='showinPuntModal' class='btn-style'>弹出inputModal</button>
+  <button type='primary' bindtap='showCustomSwiper' class='btn-style'>弹出卡片轮播</button>
+
+</view>

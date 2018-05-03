@@ -1,0 +1,42 @@
+/* components/myToast/customToast.wxss */
+.toast-container{
+  width: 750rpx;
+}
+/* opacity 1:完全不透明；0：完全透明 */
+.mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1005;
+  background: #fff;
+  opacity: 0;
+  overflow: hidden;
+}
+.toast-box-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.toast-box{
+  min-width: 50%;
+  max-width: 80%;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  /* margin: -50px 10% 0 10%; */
+  z-index: 1006;
+  border-radius: 5px;
+  background: #000;
+  opacity: 0.7;
+  padding: 10rpx;
+  text-align: center;
+  color: white
+}
+.text-style{
+  font-size: 36rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}

@@ -1,0 +1,10 @@
+<!--components/myToast/customToast.wxml-->
+<!-- 自定义Toast -->
+<view class='toast-container' hidden='{{hideToast}}'>
+  <view class='mask' bindtap='clickMask'></view>
+  <view class='toast-box-container'>
+    <view class='toast-box' style='background-color:{{backgroundColor}};opacity:{{opacity}}'>
+      <text class='text-style' style='color:{{textColor}};font-size:{{textSize}}'>{{toastContent}}</text>
+    </view>
+  </view>
+</view>

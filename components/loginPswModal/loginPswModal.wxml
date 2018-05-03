@@ -1,0 +1,25 @@
+<!--components/loginPswModal/loginPswModal.wxml-->
+
+<view hidden='{{hideInputModal}}' class='modal-container'>
+  <view class='modal-mask' bindtap='_modal_mask_click'></view>
+  <view class='modal-box-container'>
+    <view class='modal-box'>
+      <view class='title-container'>
+        <text>请输入登录密码</text>
+      </view>
+      <view class='recommend-container'>
+      <view class='password-container'>
+        <text class='label-style' hidden='true'>设置密码</text>
+        <input class='input-Phone' placeholder='输入登录密码' placeholder-class='font-size:30rpx;color:#b3b3b3' bindinput='_listenNewPsw' type='text' value='{{inputPassword}}' password='{{isVisible === true? false:true}}'></input>
+        <image class='img-style' src='{{isVisible?visibleImg:invisibleImg}}' bindtap='switchVisibleStatus'></image>
+      </view>
+      </view>
+      <view class='tip-container' bindtap='_forgetPassword'>忘记密码？</view>
+
+      <view class='btn-container'>
+        <button class='btn-style' style='color:white;background-color:{{disable?"#ccc":"#008df7"}}' bindtap='_submitRegister' disabled='{{disable}}'>确定</button>
+      </view>
+    </view>
+    <image src='../../image/icon_close_circle.png' class='del-img-style' mode='scaleToFill' bindtap='_closeModel'></image>
+  </view>
+</view>

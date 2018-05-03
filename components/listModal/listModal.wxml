@@ -1,0 +1,21 @@
+<!--components/listModal.wxml-->
+<!-- 弹窗 -->
+<view hidden='{{hidelistModal}}' class='modal-container'>
+  <view class='modal-mask' bindtap='_modal_mask_click'></view>
+
+  <view class='modal-box'>
+    <view class='title'>{{listTitle}}</view>
+
+    <block wx:for-items="{{bankcardlist}}" wx:key="id">
+      <view bindtap='_itemClick' id='{{item.id}}' class='customview-style'>
+        <view class='item-text-container'>
+          <text>{{item.cardname}}{{item.cardmember}}</text>
+        </view>
+        <view style="height:3rpx;width:90%;background-color: #e5e5e5;margin-left:5%;margin-right:5%"></view>
+      </view>
+    </block>
+    <view class='btn-container'>
+      <view class='btn-left-style' bindtap='_clickBottomText'>{{listText}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<!--pages/customSwiper/customSwiper.wxml-->
+<view class='custom-swiper-container'>
+  <view class='swiper-container'>
+
+    <swiper class='swiper-style' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" previous-margin='80rpx' next-margin='80rpx' circular:true bindchange="bindChange" >
+
+      <block wx:for="{{imgUrls}}" wx:key="index">
+      
+        <swiper-item >
+          <view style='width:100%; display:flex;flex-direction:row;'>
+            <view style='height:100%;width:15rpx;background:#fff'></view>
+            <image mode='scaleToFill' src="{{item}}" class="slide-image" style='border-radius: 10rpx; min-width:500rpx;min-height:300rpx;transform: scale(1,{{showingIndex == index?1:0.85}}'/>
+            <view style='height:100%;width:15rpx;background:#fff'></view>
+          </view>
+        </swiper-item>
+
+      </block>
+
+    </swiper>
+
+  </view>
+  
+</view>

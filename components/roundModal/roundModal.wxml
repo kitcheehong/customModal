@@ -1,0 +1,21 @@
+<!--components/roundModal.wxml-->
+<!-- 弹窗 -->
+<view hidden='{{hiddenModal}}' class='modal-container'>
+  <view class='modal-mask' bindtap='_modal_mask_click'></view>
+
+  <view class='modal-box'>
+    <view class='title' hidden='{{hideTitle}}' style='font-size:{{titleSize}};color:{{titleColor}}'>{{modalTitle}}</view>
+    <view class='content-container'>
+      <text class='modal-content-text' hidden='{{hideContent}}' style='font-size:{{contentSize}};color:{{contentColor}}'>{{modalContent}}</text>
+    </view>
+    <slot name="customView"></slot>
+    <view style='width:100%;height:2rpx;background:#eee'></view>
+
+    <view class='btn-container'>
+      <view class='btn-left-style' bindtap='_clickLeftBtn' hidden='{{hideLeftBtn}}'>{{leftText}}</view>
+       <!-- <view style='width:2rpx;height:100%;background:#eee'></view>  -->
+         <view class='divider' hidden='{{hideDivider}}'></view>   
+      <view class='btn-right-style' bindtap='_clickRightBtn' hidden='{{hideRightBtn}}'>{{rightText}}</view>
+    </view>
+  </view>
+</view>

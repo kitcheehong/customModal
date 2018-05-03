@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "customToast": "../../components/myToast/customToast",
+    "roundModal":"../../components/roundModal/roundModal",
+    "listModal":"../../components/listModal/listModal",
+    "inputModal":"../../components/inputModal/inputModal",
+    "loginPswModal":"../../components/loginPswModal/loginPswModal"
+  }
+}

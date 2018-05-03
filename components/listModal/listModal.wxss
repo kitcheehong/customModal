@@ -1,0 +1,73 @@
+/* components/listModal.wxss */
+
+.modal-container {
+  width: 750rpx;
+}
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+.modal-box {
+  width: 84%;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 1001;
+  background: #ccc;
+  margin: -150px 8% 0 8%;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.title {
+  font-size: 36rpx;
+  color: #323232;
+  margin-top: 20rpx;
+  padding: 15rpx;
+  text-align: center;
+  background-color: gray；;
+}
+/* 自定义弹框的列表 */
+.customview-style{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center
+}
+.item-text-container{
+  height: 100rpx;
+  color: #2e5299;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center
+}
+.btn-container {
+  width: 100%;
+  /* margin-top: 25rpx;
+  margin-bottom: 15rpx; */
+  height: 88rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.btn-left-style {
+  width: 100%;
+  padding: 10rpx;
+  text-align: center;
+  color: #323232;
+  font-size: 36rpx;
+}

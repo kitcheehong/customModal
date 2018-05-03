@@ -1,0 +1,93 @@
+/* components/inputModal.wxss */
+
+.modal-container{
+  width: 750rpx;
+  justify-content: center
+}
+.modal-mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1008;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.modal-box-container{
+  width: 88%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1009;
+  top: 20%;
+  margin: -20rpx 6% 0 6%;
+
+
+}
+.modal-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  z-index: 1012;
+  margin: 25rpx 4% 0 4%;
+  background-color: white;
+  border-radius: 10rpx
+}
+.title-container{
+  color: #323232;
+  font-size: 36rpx;
+  margin-top: 40rpx;
+
+}
+.recommend-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50rpx;
+  width: 100%;
+  height: 88rpx;
+}
+.label-style{
+  min-width: 140rpx;
+  font-size: 30rpx;
+  color: #323232;
+  padding-left: 60rpx;
+  text-overflow: string
+}
+.input-Phone{
+  height: 90%; 
+  margin-right: 60rpx;
+  font-size: 30rpx;
+  color:#323232;
+  border-bottom: 1rpx solid #e5e5e5;
+  flex-grow: 1;
+}
+.tip-container{
+  margin-top: 10rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  color: #f21329;
+  font-size: 24rpx;
+}
+.btn-container{
+  margin-top: 60rpx;
+  margin-bottom: 40rpx;
+  width: 100%;
+  
+}
+.btn-style{
+  height:80rpx;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 32rpx;
+}
+
+.del-img-style{
+  width: 64rpx;
+  height: 64rpx;
+  top:0rpx;
+  right: 5rpx;
+  position: absolute
+}

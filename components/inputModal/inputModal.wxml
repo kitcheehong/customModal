@@ -1,0 +1,25 @@
+<!--components/inputModal.wxml-->
+<view hidden='{{hideInputModal}}' class='modal-container'>
+  <view class='modal-mask' bindtap='_modal_mask_click'></view>
+  <view class='modal-box-container'>
+    <view class='modal-box'>
+      <view class='title-container'>
+        <text>请完善注册信息</text>
+      </view>
+      <view class='recommend-container'>
+        <text class='label-style'>推荐人</text>
+        <input class='input-Phone' type='number' placeholder='请输入手机号（选填）' placeholder-class='font-size:30rpx;color:#b3b3b3' bindinput='_listenRecommendPhone'></input>
+      </view>
+      <view class='recommend-container'>
+        <text class='label-style'>设置密码</text>
+        <input class='input-Phone' placeholder='设置新的登陆密码' placeholder-class='font-size:30rpx;color:#b3b3b3' bindinput='_listenNewPsw'></input>
+      </view>
+      <view class='tip-container'>温馨提示：如不设置新密码，将默认登录密码为a+手机号后6位数字</view>
+
+      <view class='btn-container'>
+        <button class='btn-style' style='color:white;background-color:#008fd7' bindtap='_submitRegister'>确定</button>
+      </view>
+    </view>
+    <image src='../../image/icon_close_circle.png' class='del-img-style' mode='scaleToFill' bindtap='_closeModel'></image>
+  </view>
+</view>
